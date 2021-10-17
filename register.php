@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login/Register</title>
-    <link rel="stylesheet" href="styles/styles.css">
-  </head>
-  <body>
-    <div class="page-wrapper">
-      <div class="well">
-        <h2>Register</h2>
-        <ul class="errors">
-          <li>There is an error</li>
-        </ul>
+<?php
+  include('head.php');
+  $errors = [];
+ ?>
+ <h2>Register</h2>
+
+ <?php displayErrors($errors); ?>
 
         <form class="" action="register.php" method="post">
           <div class="form-group">
@@ -43,8 +34,4 @@
 
           <p>Already have an account? <a href="login.php">Log In</a></p>
         </form>
-      </div>
-
-    </div>
-  </body>
-</html>
+<?php include('footer.php') ?>
